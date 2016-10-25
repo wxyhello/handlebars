@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	#nn{
+		border-collapse:collapse;
+	}
+	#nn td,th{
+		width:300px;
+		text-align:center;
+		line-height:30px;
+		border:1px solid #000;
+	}
+</style>
+<body>
+	<div class="result"></div>
+	
+<script src="js/jquery-1.8.3.js"></script>
+<script src="js/handlebars.js"></script>
+<script id="bookMoban" type='text/x-handlebars-template'>
+	<table id="nn">
+		<tr>
+			<th>姓名</th>
+			<th>性别</th>
+			<th>年龄</th>
+		</tr>
+		{{#each this}}
+			<tr>
+				<td> {{name}} </td>
+				<td> {{sex}} </td>
+				<td> {{age}} </td>
+			</tr>
+		{{/each}}
+	</table>
+</script>
+<script>
+	$(function(){
+		var obj=[
+			{
+				name:'袁少军',
+				sex:'男',
+				age:24
+			},
+			{
+				name:'张玉贤',
+				sex:'女',
+				age:21
+			},
+			{
+				name:'陈小倩',
+				sex:'女',
+				age:23
+			},
+			{
+				name:'苏永汉',
+				sex:'男',
+				age:19
+			},
+			{
+				name:'王晓云',
+				sex:'女',
+				age:21
+			}
+		]
+		var on=Handlebars.compile($('#bookMoban').html());
+		$('.result').html(on(obj))
+	})
+</script>
+</body>
+</html>
