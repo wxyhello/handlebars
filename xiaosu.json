@@ -1,0 +1,59 @@
+{
+	"state": 1,
+	"info": "数据请求成功",
+	"content": [
+		{
+			"id": "1001",
+			"name": "javascript权威指南",
+			"publish": "机械出版社",
+			"price": "80",
+			"author": [
+				{"name":"张三","age":23,"jianjie":"aaa"},
+				{"name":"李四","age":26,"jianjie":"bbb"}
+			]
+		},
+		{
+			"id": "1002",
+			"name": "javascript高级程序设计",
+			"publish": "人民邮电出版社",
+			"price": "50",
+			"author": [
+				{"name":"张三222","age":23,"jianjie":"ccc"},
+				{"name":"李四222","age":26,"jianjie":"ddd"}
+			]
+		},
+		{
+			"id": "1003",
+			"name": "白帽子讲安全",
+			"publish": "机械出版社",
+			"price": "30",
+			"author": [
+				{"name":"张三333","age":23,"jianjie":"eee"},
+				{"name":"李四333","age":26,"jianjie":"fff"}
+			]
+		},
+		{
+			"id": "1004",
+			"name": "seo优化",
+			"publish": "电子工业出版社",
+			"price": "80",
+			"author": [
+				{"name":"张三444","age":23,"jianjie":"ggg"},
+				{"name":"李四44","age":26,"jianjie":"hhh"}
+			]
+		},
+		{
+			"id": "1005",
+			"name": "交互设计",
+			"publish": "机械出版社",
+			"price": "63",
+			"author": [
+				{"name":"张三555","age":23,"jianjie":"iii"},
+				{"name":"李四55","age":26,"jianjie":"jjj"}
+				
+			]
+		}
+
+	]
+
+}
